@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>GameHub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111827;
+color:white;
+display:flex;
+}
+
+.sidebar{
+width:220px;
+height:100vh;
+background:#1f2937;
+padding:20px;
+position:fixed;
+left:0;
+top:0;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+margin-bottom:35px;
+}
+
+.logo span{
+color:#00b6ff;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+}
+
+.sidebar a:hover{
+background:#374151;
+}
+
+.main{
+margin-left:220px;
+width:100%;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 30px;
+background:#1f2937;
+}
+
+.search{
+width:350px;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#374151;
+color:white;
+}
+
+.avatar{
+width:50px;
+height:50px;
+border-radius:50%;
+background:#00b6ff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+}
+
+.center{
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+flex-direction:column;
+text-align:center;
+}
+
+.center h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.center p{
+font-size:22px;
+color:#cfcfcf;
+margin-bottom:30px;
+}
+
+.button{
+padding:15px 35px;
+background:#00b6ff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:20px;
+}
+
+.button:hover{
+background:#0099dd;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+GAME<span>HUB</span>
+</div>
+
+<a href="/">🏠 Главная</a>
+<a href="/login">🔑 Войти</a>
+<a href="/register">👤 Регистрация</a>
+<a href="/admin">🛡 Админ</a>
+
+</div>
+
+<div class="main">
+
+<div class="top">
+
+<input class="search" placeholder="Поиск игр...">
+
+<div class="avatar">G</div>
+
+</div>
+
+<div class="center">
+
+<h1>Добро пожаловать!</h1>
+
+<p>Здесь скоро появятся твои собственные игры.</p>
+
+<a class="button" href="/register">Создать аккаунт</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

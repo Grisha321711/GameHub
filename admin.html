@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Админ-панель</title>
+
+<style>
+body{
+    background:#111827;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+table{
+    margin:auto;
+    border-collapse:collapse;
+    width:90%;
+}
+
+th, td{
+    border:1px solid white;
+    padding:10px;
+}
+
+th{
+    background:#00d4ff;
+}
+
+a{
+    color:#00d4ff;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🛡 Админ-панель</h1>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Никнейм</th>
+<th>Почта</th>
+<th>Пароль</th>
+</tr>
+
+{% for user in users %}
+
+<tr>
+<td>{{ user[0] }}</td>
+<td>{{ user[1] }}</td>
+<td>{{ user[2] }}</td>
+<td>{{ user[3] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+<a href="/">⬅ На главную</a>
+
+</body>
+</html>
